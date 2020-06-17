@@ -68,12 +68,23 @@
 		</dependency>
 	</dependencies>
 	
-	<distributionManagement>
-		<snapshotRepository>
-			<id>nexus</id>
-			<url>http://3.18.93.183:8081/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
+	<scm>
+           <connection>scm:https://github.com/singhmohini/maven-multi-module-example.git</connection>
+           <url>https://github.com/singhmohini/maven-multi-module-example.git</url>
+           <developerConnection>scm:git:https://github.com/singhmohini/maven-multi-module-example.git</developerConnection>
+           <tag>1.6</tag>
+        </scm>
+
+       <distributionManagement>
+          <snapshotRepository>
+             <id>nexus</id>
+             <url>http://3.135.202.163:8081/nexus/content/repositories/snapshots</url>
+          </snapshotRepository>
+          <repository>
+             <id>nexus</id>
+             <url>http://3.135.202.163:8081/nexus/content/repositories/releases</url>
+          </repository>
+       </distributionManagement>
 
 	<build>
 		<plugins>
