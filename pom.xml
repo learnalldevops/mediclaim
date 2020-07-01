@@ -66,6 +66,12 @@
 		</dependency>
 	</dependencies>
 	
+	<scm>
+           <connection>scm:https://github.com/singhmohini/mediclaim.git</connection>
+           <url>https://github.com/singhmohini/mediclaim.git</url>
+           <developerConnection>scm:git:https://github.com/singhmohini/mediclaim.git</developerConnection>
+        </scm>
+	
 
        <distributionManagement>
           <snapshotRepository>
